@@ -6603,7 +6603,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-image: url("assets\images\01.gif");
+  background-image: url("\assets\images\01.gif");
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
