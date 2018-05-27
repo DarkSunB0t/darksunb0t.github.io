@@ -5881,7 +5881,7 @@ label.panel-block:hover {
 }
 
 .hero.is-black .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a {
-  color: white;
+  color: red;
 }
 
 .hero.is-black .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover {
