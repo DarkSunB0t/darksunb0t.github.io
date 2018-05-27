@@ -6602,15 +6602,14 @@ label.panel-block:hover {
   }
 }
 
-canvas#particle-js {
+#particle-js {
     background-color: white !important;
-    /* important */
     position: absolute !important;
     width: 100px !important; // define your width
     height: auto !important; // define your height
-    /* depending on where you want this canvas, you can use left/right/top and bottom properties */
     left: 0;
     top: 0; 
+	z-index: 1;
 }
 
 .footer {
