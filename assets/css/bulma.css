@@ -3468,7 +3468,7 @@ input[type="submit"].button {
 
 .message-body code,
 .message-body pre {
-  background: url("/assets/images/bg.jpg");
+  background: transparent;
 }
 
 .message-body pre code {

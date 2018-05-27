@@ -13,6 +13,9 @@
 }
 
 .main-container {
+	background: url("/assets/images/bg.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
     max-width: 900px;
     margin: 0 auto;
     padding-left: 2%;
