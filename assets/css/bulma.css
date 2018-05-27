@@ -6601,7 +6601,7 @@ label.panel-block:hover {
 }
 
 .footer {
-  background-image: /assets/images/01.gif;
+  background-image: {{ site.baseurl }}/assets/images/01.gif;
   background-repeat: repeat;
   padding: 3rem 1.5rem 6rem;
 }
