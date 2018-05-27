@@ -2541,7 +2541,7 @@ input[type="submit"].button {
 }
 
 .table.is-striped tbody tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .table.is-striped tbody tr:nth-child(even):hover {
