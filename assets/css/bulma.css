@@ -148,6 +148,11 @@ body {
   line-height: 1.5;
 }
 
+#particles-js {
+	height: 100%;
+	background: #ffffff;
+}
+
 a {
   color: #00d1b2;
   cursor: pointer;
