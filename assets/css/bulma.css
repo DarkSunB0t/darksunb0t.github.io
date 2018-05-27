@@ -5864,11 +5864,11 @@ label.panel-block:hover {
 .hero.is-black a.nav-item:hover, .hero.is-black a.nav-item.is-active,
 .hero.is-black .nav-item a:not(.button):hover,
 .hero.is-black .nav-item a:not(.button).is-active {
-  color: white;
+  color: red;
 }
 
 .hero.is-black .tabs a {
-  color: white;
+  color: red;
   opacity: 0.9;
 }
 
@@ -5881,7 +5881,7 @@ label.panel-block:hover {
 }
 
 .hero.is-black .tabs.is-boxed a, .hero.is-black .tabs.is-toggle a {
-  color: red;
+  color: white;
 }
 
 .hero.is-black .tabs.is-boxed a:hover, .hero.is-black .tabs.is-toggle a:hover {
