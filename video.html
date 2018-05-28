@@ -4,11 +4,10 @@ title: Видеоролики
 ---
 <h3 class="nice-title">Последние видеоролики</h3>
 <ul class="posts">
-  {% for post in site.tags.linux limit: 20 %}
+  {% for post in site.tags.видео limit: 20 %}
     <li>
       {{ post.title }}
-      ({{ post.date | localize:"%Y-%m-%d" }})
     </li>
   {% endfor %}
 </ul>
-<br><br> Вы всегда также найти мои ролики на <a href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA">Youtube</a> или <a href="https://viuly.io/channel/36021?tab=videos">Viuly</a>.</p>
+<br><br> Вы также можете найти мои ролики на <a href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA">Youtube</a> или <a href="https://viuly.io/channel/36021?tab=videos">Viuly</a>.</p>
