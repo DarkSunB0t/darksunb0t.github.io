@@ -214,7 +214,7 @@ var galTheme = {
 		const $container = $(container)
 		container.lang = "zh-CN"
 		container.className = 'gitment-editor-container'
-		$container.append('<h3 class="comment-reply-title"><i class="fa fa-pencil"></i> 欢迎留言</h3>')
+		$container.append('<h3 class="comment-reply-title"><i class="fa fa-pencil"></i> Комментировать</h3>')
 		if (state.user.login) {
 			const smilelink = document.createElement('div')
 			const $smilelink = $(smilelink)
@@ -274,9 +274,7 @@ var galTheme = {
 
 		} else {
 			$container.append(`<p class="must-log-in">
-													要发表评论，您必须先
-													<a href="${loginLink()}">登录</a>
-													。
+													<a href="${loginLink()}">Войдите</a> чтобы оставить комментарий.
 												 </p>`)
 		}
 		return container
@@ -426,7 +424,7 @@ function formatDate(date) {
 		timeZone = '上午'
 	}
 	var minutes = date.getMinutes() >= 10 ? date.getMinutes() : '0' + date.getMinutes()
-	return year + '年' + month + '月' + day + '日 ' + timeZone + date.getHours() + ':' + minutes
+	return year + 'Месяц' + month + 'День' + day + '日 ' + timeZone + date.getHours() + ':' + minutes
 }
 
 // goLoginLink

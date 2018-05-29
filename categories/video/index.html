@@ -12,7 +12,7 @@
     
     
     
-    <title>Hello World | DarkSunB0t</title>
+    <title>categories: video | DarkSunB0t</title>
     <link href=”https://darksunb0t.github.io“ rel=”prefetch” />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -122,20 +122,56 @@
                 
                 
                 
-                <li class="">
-                    <a href="/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>Категории
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/video/">video</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>Тэги
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/update-darksunb0t/">update, darksunb0t</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/webm-viuly/">webm, viuly</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/update/">update</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -156,27 +192,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-category">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://darksunb0t.github.io">DarkSunB0t</a>
         >
-        <span>Hello World</span>
+        <span>目录</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2018/05/29/hello-world/">Hello World</a>
+                <a href="/categories/video/index.html">video</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2018-05-29
-            </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -184,42 +212,21 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2018/05/29/hello-world/">Hello World</a>
+                    <a href="/categories/video/index.html">video</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2018-05-29
-            </p>
-            <p>
-                
-                
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+    <div class="content-article" style="margin-top: 30px;">
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="/2018/05/30/webm0/">Webm Collection 0</a>
+            <br>
+            
+            
+        </div>
     </div>
 </article>
-
-
-<div id="comments-template"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script>
-	if(!window.commentConfig) {
-      window.commentConfig = {}
-      window.commentConfig.title = 'Hello World'
-    }
-</script>
-
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <aside id="sidebar-search">
@@ -276,7 +283,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/05/29/hello-world/">Hello World</a>
+                    <a href="/2018/05/30/webm0/">Webm Collection 0</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/29/upd0.4/">Update 0.4</a>
                 </span>
             </li>
             
@@ -298,7 +311,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/05/29/hello-world/">Hello World</a>
+                    <a href="/2018/05/29/upd0.4/">Update 0.4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/30/webm0/">Webm Collection 0</a>
                 </span>
             </li>
             
@@ -311,17 +330,29 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/2018/05/29/hello-world/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/categories/video/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">Частые темы</a>
                 </li>
                 <li class="">
-                    <a href="/2018/05/29/hello-world/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/categories/video/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">Поддержи!</a>
                 </li>
                 <li class="">
-                    <a href="/2018/05/29/hello-world/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/categories/video/index.html#sidebar-links" data-toggle="tab" id="links-tab">Найди меня</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/update-darksunb0t/" style="font-size: 16.08506662003218px;" class="tag-cloud-link">update, darksunb0t</a>
+    
+    <a href="/tags/webm-viuly/" style="font-size: 16.131322184297566px;" class="tag-cloud-link">webm, viuly</a>
+    
+    <a href="/tags/update/" style="font-size: 18.38536038110471px;" class="tag-cloud-link">update</a>
+    
+    <a href="/tags/darksunb0t/" style="font-size: 9.759244495941378px;" class="tag-cloud-link">darksunb0t</a>
+    
+    <a href="/tags/webm/" style="font-size: 14.690794306402653px;" class="tag-cloud-link">webm</a>
+    
+    <a href="/tags/viuly/" style="font-size: 19.398275937321042px;" class="tag-cloud-link">viuly</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -414,7 +445,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Tue May 29 2018 15:36:00 GMT+0300'
+      window.commentConfig.id = ''
       window.commentConfig.owner = 'DarkSunB0t'
       window.commentConfig.repo = 'DarkSunB0t'
       window.commentConfig.client_id = 'b125c307167a8f83f890'
@@ -422,7 +453,7 @@
       window.commentConfig.redirect_uri = 'https://darksunb0t.github.io'
     } else {
       window.commentConfig = {
-      	id: 'Tue May 29 2018 15:36:00 GMT+0300',
+      	id: '',
         owner: 'DarkSunB0t',
         repo: 'DarkSunB0t',
         client_id: 'b125c307167a8f83f890',
