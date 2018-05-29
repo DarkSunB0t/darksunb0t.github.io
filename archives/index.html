@@ -1,11 +1,11 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="DarkSunB0t">
+    
+    <meta name="description" content="Описание">
     
     
     
@@ -47,7 +47,6 @@
     </script>-->
 </head>
 <body>
-    <!-- 背景轮播图功能 -->
     <section class="hidden-xs">
     <ul class="cb-slideshow">
         <li><span>天若</span></li>
@@ -58,7 +57,6 @@
         <li><span>续一秒</span></li>
     </ul>
 </section>
-    <!-- 欧尼酱功能, 谁用谁知道 -->
     
     <div class="gal-menu gal-dropdown">
     <div class="circle" id="gal">
@@ -67,9 +65,9 @@
             
             <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
             
-            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
-            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
-            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">Архивы</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">Обо мне</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">Связаться</a>
             
             <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
             
@@ -109,7 +107,7 @@
                 
                 <li class="">
                     <a href="/">
-                        <i class="fa fa-home"></i>首页
+                        <i class="fa fa-home"></i>Главная
                     </a>
                 </li>
                 
@@ -117,7 +115,7 @@
                 
                 <li class="current">
                     <a href="/archives">
-                        <i class="fa fa-archive"></i>归档
+                        <i class="fa fa-archive"></i>Архивы
                     </a>
                 </li>
                 
@@ -126,7 +124,7 @@
                 
                 <li class="">
                     <a href="/categories">
-                        <i class="fa fa-list"></i>分类
+                        <i class="fa fa-list"></i>Категории
                     </a>
                 </li>
                 
@@ -136,7 +134,7 @@
                 
                 <li class="">
                     <a href="/tags">
-                        <i class="fa fa-tags"></i>标签
+                        <i class="fa fa-tags"></i>Тэги
                     </a>
                 </li>
                 
@@ -145,7 +143,7 @@
                 
                 <li class="">
                     <a href="/about">
-                        <i class="fa fa-user"></i>关于我
+                        <i class="fa fa-user"></i>Обо мне
                     </a>
                 </li>
                 
@@ -223,7 +221,8 @@
         <div class="author-panel text-center">
             <img src="/imgs/avatar.jpg" width="140" height="140"
                  alt="个人头像" class="author-image">
-            <p class="author-description"></p>
+            <p class="author-description"><p>Описание</p>
+</p>
         </div>
     </div>
 </aside>
@@ -306,30 +305,14 @@
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
     
     <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
-    </li>
-    
-    <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
-    </li>
-    
-    <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+        <a href="http://kdays.net/days/" target="_blank">DonationAlerts</a>
     </li>
     
 </div>
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
     <li>
-        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
-    </li>
-    
-    <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-    </li>
-    
-    <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+        <a href="https://github.com/DarkSunB0t" target="_blank">Github</a>
     </li>
     
 </div>
@@ -378,7 +361,7 @@
       }
     })
 
-    // 初始化aos
+    // Скролл aos
     AOS.init({
       duration: 1000,
       delay: 0,
@@ -406,5 +389,26 @@
 
 
 
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'DarkSunB0t'
+      window.commentConfig.repo = 'DarkSunB0t'
+      window.commentConfig.client_id = 'b125c307167a8f83f890'
+      window.commentConfig.client_secret = '2dba64121b40393dc95fcbf96f18b717f9f4cb39'
+      window.commentConfig.redirect_uri = 'https://darksunb0t.github.io'
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'DarkSunB0t',
+        repo: 'DarkSunB0t',
+        client_id: 'b125c307167a8f83f890',
+        client_secret: '2dba64121b40393dc95fcbf96f18b717f9f4cb39',
+        redirect_uri: 'https://darksunb0t.github.io'
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
+
 </html>
->>>>>>> parent of 1a3200b... Upd 0.4+
