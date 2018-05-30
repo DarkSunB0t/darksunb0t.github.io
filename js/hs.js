@@ -6,7 +6,7 @@
 				$(this).parent().wrap(`<p class="gal-image"></p>`)
 				$(this).parent().parent('.gal-image').wrap(`<div class="gal-image-container"></div>`)
 				$(this).attr('width', 650);
-				$(this).attr('title', '点击放大');
+				$(this).attr('title', 'Открыть в большем размере');
 				$(this).attr('alt', '');
 			}
 		})
