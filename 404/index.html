@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="DarkSunB0t">
     
-    <meta name="description" content="Тот самый редкостный мерзавец">
+    <meta name="description" content="Тот самый редкостный мерзавец.&lt;br&gt;&lt;a href=&#34;https://darksunb0t.github.io/about&#34; target=&#34;_blank&#34;&gt;Кто такой DarkSunB0t?&lt;/a&gt;">
     
     
     
@@ -65,7 +65,7 @@
             
             <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
             
-            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">Архивы</a>
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">Архив</a>
             <a href="/about" class="menuItem" style="left: 50%; top: 85%;">Обо мне</a>
             <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">Связаться</a>
             
@@ -115,7 +115,7 @@
                 
                 <li class="">
                     <a href="/archives">
-                        <i class="fa fa-archive"></i>Архивы
+                        <i class="fa fa-archive"></i>Архив
                     </a>
                 </li>
                 
@@ -133,6 +133,10 @@
                         
                         <li>
                             <a href="/categories/video/">video</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Видео/">Видео</a>
                         </li>
                         
                         
@@ -193,7 +197,57 @@
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
                     
-<!-- 404 自定义页面 -->
+<h3 class="nice-title">Ошибка 404 - Ничего не найдено!</h3>
+        <div class="frame">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <canvas id="canvas"></canvas>
+
+        <script type="text/javascript">
+            var Application = ( function () {
+                var canvas;
+                var ctx;
+                var imgData;
+                var pix;
+                var WIDTH;
+                var HEIGHT;
+                var flickerInterval;
+        
+                var init = function () {
+                    canvas = document.getElementById('canvas');
+                    ctx = canvas.getContext('2d');
+                    canvas.width = WIDTH = 540;
+                    canvas.height = HEIGHT = 500;
+                    ctx.fillStyle = 'white';
+                    ctx.fillRect(0, 0, WIDTH, HEIGHT);
+                    ctx.fill();
+                    imgData = ctx.getImageData(0, 0, WIDTH, HEIGHT);
+                    pix = imgData.data;
+                    flickerInterval = setInterval(flickering, 30);
+                };
+        
+                var flickering = function () {
+                    for (var i = 0; i < pix.length; i += 4) {
+                        var color = (Math.random() * 255) + 50;
+                        pix[i] = color;
+                        pix[i + 1] = color;
+                        pix[i + 2] = color;
+                    }
+                    ctx.putImageData(imgData, 0, 0);
+                };
+        
+                return {
+                    init: init
+                };
+            }());
+        
+            Application.init();
+            
+        </script>
+<p class="post-text">Данной страницы не существует, а если она есть и не работает - значит я работаю над проблемой. Терпение. 
+<br><br> Вернуться <a href="/">на главную</a> или попробовать <a href="https://cse.google.com/cse/publicurl?cx=008293931973746724100:ntg5ke4akp8">поиск от гугла</a>.</p>
 <!-- 有其他想自定义的page在这里添加判断条件, 并且写好对应的模板渲染文件 -->
 
                 </div>
@@ -219,7 +273,7 @@
         <div class="author-panel text-center">
             <img src="/imgs/avatar.jpg" width="140" height="140"
                  alt="个人头像" class="author-image">
-            <p class="author-description"><p>Тот самый редкостный мерзавец</p>
+            <p class="author-description"><p>Тот самый редкостный мерзавец.<br><a href="https://darksunb0t.github.io/about" target="_blank">Кто такой DarkSunB0t?</a></p>
 </p>
         </div>
     </div>
@@ -311,17 +365,19 @@
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/update-darksunb0t/" style="font-size: 9.762678716092923px;" class="tag-cloud-link">update, darksunb0t</a>
+    <a href="/tags/update-darksunb0t/" style="font-size: 19.378919385267494px;" class="tag-cloud-link">update, darksunb0t</a>
     
-    <a href="/tags/webm-viuly/" style="font-size: 9.142855511328952px;" class="tag-cloud-link">webm, viuly</a>
+    <a href="/tags/webm-viuly/" style="font-size: 18.724837316979723px;" class="tag-cloud-link">webm, viuly</a>
     
-    <a href="/tags/update/" style="font-size: 14.457787433807617px;" class="tag-cloud-link">update</a>
+    <a href="/tags/update/" style="font-size: 8.625395139444798px;" class="tag-cloud-link">update</a>
     
-    <a href="/tags/darksunb0t/" style="font-size: 16.655334764501397px;" class="tag-cloud-link">darksunb0t</a>
+    <a href="/tags/darksunb0t/" style="font-size: 9.176607213888303px;" class="tag-cloud-link">darksunb0t</a>
     
-    <a href="/tags/webm/" style="font-size: 13.971925072720188px;" class="tag-cloud-link">webm</a>
+    <a href="/tags/webm/" style="font-size: 17.499841110837075px;" class="tag-cloud-link">webm</a>
     
-    <a href="/tags/viuly/" style="font-size: 12.199772040038773px;" class="tag-cloud-link">viuly</a>
+    <a href="/tags/viuly/" style="font-size: 12.168998798294945px;" class="tag-cloud-link">viuly</a>
+    
+    <a href="/tags/видео/" style="font-size: 15.4467791517265px;" class="tag-cloud-link">видео</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">

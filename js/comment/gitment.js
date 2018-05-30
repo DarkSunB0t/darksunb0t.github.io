@@ -214,7 +214,7 @@ var galTheme = {
 		const $container = $(container)
 		container.lang = "zh-CN"
 		container.className = 'gitment-editor-container'
-		$container.append('<h3 class="comment-reply-title"><i class="fa fa-pencil"></i> Комментировать</h3>')
+		$container.append('<h3 class="comment-reply-title"><i class="fa fa-pencil"></i> Комментарии</h3>')
 		if (state.user.login) {
 			const smilelink = document.createElement('div')
 			const $smilelink = $(smilelink)
@@ -238,16 +238,16 @@ var galTheme = {
 			logoutContainer.className = 'pull-right'
 			logoutContainer.style.display = 'inline-block'
 			const logoutLink = document.createElement('a')
-			logoutLink.innerText = '退出登录'
+			logoutLink.innerText = 'Комментировать'
 			logoutLink.onclick = () => instance.logout()
 			logoutContainer.appendChild(logoutLink)
 			$container.append($logoutContainer)
 
 			$container.append(`<div class="gitment-editor-write-field">
-													<textarea id="comment" placeholder="赶快发表你的见解吧！" cols="45" rows="7"></textarea>
+													<textarea id="comment" placeholder="Оставьте свой комментарий!" cols="45" rows="7"></textarea>
 												 </div>`)
 			$container.append(`<p class="form-submit">
-													<a class="gitment-editor-submit">发表评论</a>
+													<a class="gitment-editor-submit">Прокомментировать</a>
 												 </p>`)
 
 			const submitButton = container.querySelector('.gitment-editor-submit')
@@ -256,18 +256,18 @@ var galTheme = {
 
 			submitButton.onclick = function () {
 				if(!submitButton.hasAttribute('disabled')) {
-					submitButton.innerText = '正在提交评论中...'
+					submitButton.innerText = 'Отправка комментария...'
 					submitButton.setAttribute('disabled', true)
 					instance.post(textarea.value.trim())
 						.then(data => {
 							textarea.value = ''
 							submitButton.removeAttribute('disabled')
-							submitButton.innerText = '发表评论'
+							submitButton.innerText = 'Оставить комментарий'
 						})
 						.catch(error => {
 							console.log(error)
 							submitButton.removeAttribute('disabled')
-							submitButton.innerText = '发表评论'
+							submitButton.innerText = 'Оставить комментарий'
 						})
 				}
 			}
@@ -284,7 +284,7 @@ var galTheme = {
 		container.lang = "zh-CN"
 		container.className = 'gitment-footer-container'
 		const $container = $(container)
-		$container.append('Powered by <a href="https://github.com/imsun/gitment" target="_blank">Gitment</a>')
+		$container.append('<a href="https://github.com/imsun/gitment" target="_blank">Gitment</a>')
 		return container
 	},
 	// 编辑的模板
