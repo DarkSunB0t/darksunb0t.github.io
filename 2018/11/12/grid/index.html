@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="DarkSunB0t">
+    
+    
+    
+    
+    
+    
+    <title>Race Driver GRID | DarkSunB0t</title>
+    <link href="”https://darksunb0t.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg,preview11.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+</head></html>
+<body>
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://darksunb0t.github.io" class="menuItem" style="left: 50%; top: 15%;">Домой</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">Вперёд</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">Архив</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">Обо мне</a>
+            <a href="https://vk.com/im?sel=-153364016" class="menuItem" style="left: 19.6891%; top: 67.5%;">Связаться</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">Назад</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/maskot.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://darksunb0t.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #ce0404,0 0 35px #ce0404,0 0 40px #ce0404,0 0 50px #ce0404,0 0 75px #ce0404;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">DarkSunB0t</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>Главная
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>Архив
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>Категории
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/API/">API</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Видео/">Видео</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Игровые-движки/">Игровые движки</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>Тэги
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Windows/">Windows</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/Microsoft/">Microsoft</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/Обзор/">Обзор</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>Обо мне
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://darksunb0t.github.io">DarkSunB0t</a>
+        >
+        <span>Race Driver GRID</span>
+    </div>
+    <!-- Большой Экран -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/grid/">Race Driver GRID</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Автосимулятор/">Автосимулятор</a>, 
+                
+                <a href="/tags/Гонки/">Гонки</a>, 
+                
+                <a href="/tags/Codemasters/">Codemasters</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-11-12
+            </span>
+            
+        </div>
+    </div>
+    <!-- Маленький Экран -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/11/12/grid/">Race Driver GRID</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-11-12
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Автосимулятор/">Автосимулятор</a>, 
+                
+                <a href="/tags/Гонки/">Гонки</a>, 
+                
+                <a href="/tags/Codemasters/">Codemasters</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <table class="infobox" data-name="Компьютерная игра" style="font-size: 12.32px; border: 1px solid rgb(255, 0, 0); background: rgb(255, 255, 255,0.4); margin-bottom: 0.5em; margin-left: 1em; padding: 0.4em; float: right; clear: right; width: 23em; vertical-align: middle; line-height: 1.5em; color: rgb(0, 0, 0); font-family: sans-serif;"><tbody><tr><th colspan="2" class="" style="vertical-align: top; text-align: center; font-size: 15.4px; background: rgb(255, 0, 0);"><em>Race Driver: GRID</em></th></tr><tr><td colspan="2" class="" style="vertical-align: top; text-align: center; padding-left: 0px; padding-right: 0px;"><span class="no-wikidata" data-wikidata-property-id="P18"><img src="/imgs/preview/grid.jpg" alt="Race Driver: GRID"></span></td></tr><tr><th class="plainlist" style="vertical-align: top;">Разработчик</th><td class="plainlist" style="vertical-align: top;"><span class="no-wikidata" data-wikidata-property-id="P178"><a href="/tags/Codemasters">Codemasters</a></span></td></tr><tr><th class="plainlist" style="vertical-align: top;">Издатель</th><td class="plainlist" style="vertical-align: top;"><span class="no-wikidata" data-wikidata-property-id="P123"><a href="/tags/Codemasters">Codemasters</a></span></td></tr><tr><th class="plainlist" style="vertical-align: top;"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9_%D0%B8%D0%B3%D1%80%D1%8B" title="Локализация компьютерной игры" target="_blank" rel="noopener">Локализатор</a></th><td class="plainlist" style="vertical-align: top;">Бука</td></tr><tr><th class="plainlist" style="vertical-align: top;">Серия игр</th><td class="plainlist" style="vertical-align: top;"><span class="no-wikidata" data-wikidata-property-id="P179"><a href="/tags/Colin-McRae-Rally">Colin McRae Rally</a></span></td></tr><tr><th class="plainlist" style="vertical-align: top;">Дата выпуска</th><td class="plainlist" style="vertical-align: top;">15 июня 2007 года<br></td></tr><tr><th colspan="2" style="vertical-align: top; text-align: center; background: rgb(255, 0, 0);">Создатели</th></tr><tr><th class="plainlist" style="vertical-align: top;">Продюсер</th><td class="plainlist" style="vertical-align: top;"><span class="wikidata-claim" data-wikidata-property-id="P86" data-wikidata-claim-id="Q753749$9460949E-9C2F-4027-A6BA-278C7470E508"><span class="wikidata-snak wikidata-main-snak">Клайв Муди</span></span></td></tr><br><tr><th colspan="2" style="vertical-align: top; text-align: center; background: rgb(255, 0, 0);">Технические данные</th></tr><tr><th class="plainlist" style="vertical-align: top;"><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0" title="Компьютерная платформа" target="_blank" rel="noopener">Платформы</a></th><td class="plainlist" style="vertical-align: top;"><span class="no-wikidata" data-wikidata-property-id="P400"><a href="/tags/Windows">Windows</a>, <a href="/tags/PS3">PlayStation 3</a>, <a href="/tags/Xbox 360" title="Xbox 360">Xbox 360</a></span></td></tr><tr><th class="plainlist" style="vertical-align: top;"><a href="https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D0%B2%D0%B8%D0%B6%D0%BE%D0%BA" title="Игровой движок" target="_blank" rel="noopener">Игровой движок</a></th><td class="plainlist" style="vertical-align: top;"><span class="no-wikidata" data-wikidata-property-id="P408"><a href="/2018/11/12/ego_engine/">EGO</a></span></td></tr></tbody></table>
+
+<p><strong>DiRT 2</strong> <em>(перев. «Грязь»)</em> — является седьмой гоночной игрой серии <a href="/tags/Colin-McRae-Rally">Colin McRae Rally</a>, разработана <a href="/tags/Codemasters">Codemasters</a>. Игра представляет собой продолжение предыдущей игры серии — <a href="/2018/11/12/dirt/">Colin McRae: DiRT</a>. DiRT 2 базируется на первом поколении движка <a href="/2018/11/12/ego_engine/">EGO™ Engine</a>. Новый движок позволяет увеличить разрешение текстур вдвое (по сравнению с DiRT и GRID). Также в DiRT 2 расширен автопарк. В нём присутствуют лицензированные автомобили, багги, внедорожники, специально отобранные для агрессивных и быстрых гонок. Также присутствует новый, продвинутый режим мультиплеера.</p>
+<p>В игре DiRT 2 задействован <a href="/2018/11/12/directx/">DirectX 11</a>, который доступен как часть операционной системы в Windows 7, а также как загружаемая модификация к Windows Vista. Codemasters немедленно воспользовалась особенностями DirectX 11, которые добавили реализма в гонках. Аппаратная поддержка улучшила прорисовку воды, пыли и также воодушевления толп людей. Вся эта богатая картинка создана во многом благодаря Shader 5.0. В разработке игры принимала участие компания AMD, которая обеспечивала Codemasters доступ к своему программному обеспечению для экспертизы в технологиях DirectX 11.</p>
+<p>В сентябре 2009 вышло продолжение <a href="/2018/11/12/dirt2/">GRID 2</a>. </p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Race Driver GRID'
+    }
+</script>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="Попробуй меня">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            DarkSunB0t
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140" alt="Аватар" class="author-image">
+            <p class="author-description">Тот самый редкостный мерзавец, что старается делать "качественный" контент для тебя.
+			<br><a href="about">Кто такой DSB?</a></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            Последние комментарии
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            Последние записи
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/upd0.5/">Update 0.5</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/falloutnewvegas/">Fallout New Vegas</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt/">Colin McRae DiRT</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout-van-buren/">Project Van Buren</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/grid/">Race Driver GRID</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout/">Fallout</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout2/">Fallout 2</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout3/">Fallout 3</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout4/">Fallout 4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt3/">Dirt 3</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            Случайные записи
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/directx/">DirectX</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt/">Colin McRae DiRT</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt2/">DiRT 2</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout3/">Fallout 3</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/30/symbols/">Символы для соц. сетей</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/10/letitidie/">Обзор Let It Die</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/warframe/">Хэллоуин в Warframe 2018</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/09/10/Dirt4/">Обзор Dirt 4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/06/02/steam_helper/">Помощь со Steam</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/gamebryo_engine/">Gamebryo Element Engine</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class="">
+                    <a href="/2018/11/12/grid/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">Частые темы</a>
+                </li>
+                <li class="">
+                    <a href="/2018/11/12/grid/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">Поддержи!</a>
+                </li>
+                <li class="">
+                    <a href="/2018/11/12/grid/index.html#sidebar-links" data-toggle="tab" id="links-tab">Подписаться</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Windows/" style="font-size: 18.240321157666678px;" class="tag-cloud-link">Windows</a>
+    
+    <a href="/tags/Microsoft/" style="font-size: 19.87747826065116px;" class="tag-cloud-link">Microsoft</a>
+    
+    <a href="/tags/Обзор/" style="font-size: 19.897697222460696px;" class="tag-cloud-link">Обзор</a>
+    
+    <a href="/tags/Youtube/" style="font-size: 19.25057375736261px;" class="tag-cloud-link">Youtube</a>
+    
+    <a href="/tags/Видео/" style="font-size: 8.012723075091236px;" class="tag-cloud-link">Видео</a>
+    
+    <a href="/tags/Автосимулятор/" style="font-size: 8.511835622210945px;" class="tag-cloud-link">Автосимулятор</a>
+    
+    <a href="/tags/Dirt/" style="font-size: 9.159041815886685px;" class="tag-cloud-link">Dirt</a>
+    
+    <a href="/tags/Dirt-4/" style="font-size: 8.809633758167188px;" class="tag-cloud-link">Dirt 4</a>
+    
+    <a href="/tags/Гонки/" style="font-size: 8.368318169560759px;" class="tag-cloud-link">Гонки</a>
+    
+    <a href="/tags/Codemasters/" style="font-size: 18.105207956487167px;" class="tag-cloud-link">Codemasters</a>
+    
+    <a href="/tags/Colin-McRae-Rally/" style="font-size: 19.441784567461916px;" class="tag-cloud-link">Colin McRae Rally</a>
+    
+    <a href="/tags/Rally/" style="font-size: 8.277516292258028px;" class="tag-cloud-link">Rally</a>
+    
+    <a href="/tags/Dirt-2/" style="font-size: 9.49368273006706px;" class="tag-cloud-link">Dirt 2</a>
+    
+    <a href="/tags/Colin-McRae/" style="font-size: 13.168425336422345px;" class="tag-cloud-link">Colin McRae</a>
+    
+    <a href="/tags/Nintendo-DS/" style="font-size: 10.196444378244573px;" class="tag-cloud-link">Nintendo DS</a>
+    
+    <a href="/tags/PSP/" style="font-size: 8.039735713236933px;" class="tag-cloud-link">PSP</a>
+    
+    <a href="/tags/WII/" style="font-size: 11.640473565965992px;" class="tag-cloud-link">WII</a>
+    
+    <a href="/tags/Fallout/" style="font-size: 9.13389608073591px;" class="tag-cloud-link">Fallout</a>
+    
+    <a href="/tags/Постапокалипсис/" style="font-size: 18.449390251000295px;" class="tag-cloud-link">Постапокалипсис</a>
+    
+    <a href="/tags/Пустошь/" style="font-size: 12.906656663227562px;" class="tag-cloud-link">Пустошь</a>
+    
+    <a href="/tags/Fallout-2/" style="font-size: 14.370166304613786px;" class="tag-cloud-link">Fallout 2</a>
+    
+    <a href="/tags/Fallout-3/" style="font-size: 14.880526393886159px;" class="tag-cloud-link">Fallout 3</a>
+    
+    <a href="/tags/Fallout-4/" style="font-size: 12.82681932846496px;" class="tag-cloud-link">Fallout 4</a>
+    
+    <a href="/tags/Dirt-3/" style="font-size: 15.746026406429497px;" class="tag-cloud-link">Dirt 3</a>
+    
+    <a href="/tags/Fallout-76/" style="font-size: 19.008839847280235px;" class="tag-cloud-link">Fallout 76</a>
+    
+    <a href="/tags/MMO/" style="font-size: 18.758163526460095px;" class="tag-cloud-link">MMO</a>
+    
+    <a href="/tags/Приключение/" style="font-size: 8.087597073748501px;" class="tag-cloud-link">Приключение</a>
+    
+    <a href="/tags/Bethesda/" style="font-size: 14.012061195037646px;" class="tag-cloud-link">Bethesda</a>
+    
+    <a href="/tags/Fallout-New-Vegas/" style="font-size: 10.79711952033848px;" class="tag-cloud-link">Fallout New Vegas</a>
+    
+    <a href="/tags/New-Vegas/" style="font-size: 18.930260217078505px;" class="tag-cloud-link">New Vegas</a>
+    
+    <a href="/tags/Obsidian-Entertainment/" style="font-size: 19.952309847702217px;" class="tag-cloud-link">Obsidian Entertainment</a>
+    
+    <a href="/tags/Action/" style="font-size: 10.313824989743043px;" class="tag-cloud-link">Action</a>
+    
+    <a href="/tags/RPG/" style="font-size: 16.256419419471097px;" class="tag-cloud-link">RPG</a>
+    
+    <a href="/tags/Van-Buren/" style="font-size: 18.326977285373488px;" class="tag-cloud-link">Van Buren</a>
+    
+    <a href="/tags/Update/" style="font-size: 14.572906043454775px;" class="tag-cloud-link">Update</a>
+    
+    <a href="/tags/DarkSunB0t/" style="font-size: 12.401704777730036px;" class="tag-cloud-link">DarkSunB0t</a>
+    
+    <a href="/tags/Free-to-Play/" style="font-size: 13.038551998797457px;" class="tag-cloud-link">Free to Play</a>
+    
+    <a href="/tags/Grasshopper-Manufacture/" style="font-size: 19.268523723128002px;" class="tag-cloud-link">Grasshopper Manufacture</a>
+    
+    <a href="/tags/Souls-like/" style="font-size: 13.5968893037605px;" class="tag-cloud-link">Souls like</a>
+    
+    <a href="/tags/Let-It-Die/" style="font-size: 18.796781995132193px;" class="tag-cloud-link">Let It Die</a>
+    
+    <a href="/tags/F2P/" style="font-size: 10.663345312843745px;" class="tag-cloud-link">F2P</a>
+    
+    <a href="/tags/ASCII/" style="font-size: 11.864758490626016px;" class="tag-cloud-link">ASCII</a>
+    
+    <a href="/tags/Steam/" style="font-size: 11.328470044396717px;" class="tag-cloud-link">Steam</a>
+    
+    <a href="/tags/Vk/" style="font-size: 10.977393910444123px;" class="tag-cloud-link">Vk</a>
+    
+    <a href="/tags/HTML/" style="font-size: 15.83928271003051px;" class="tag-cloud-link">HTML</a>
+    
+    <a href="/tags/Web/" style="font-size: 11.074530854117832px;" class="tag-cloud-link">Web</a>
+    
+    <a href="/tags/WoT/" style="font-size: 19.78492993111522px;" class="tag-cloud-link">WoT</a>
+    
+    <a href="/tags/For-Honor/" style="font-size: 17.233249213531693px;" class="tag-cloud-link">For Honor</a>
+    
+    <a href="/tags/Spiral-Knights/" style="font-size: 15.112255104415748px;" class="tag-cloud-link">Spiral Knights</a>
+    
+    <a href="/tags/Fortnite/" style="font-size: 10.544900468980417px;" class="tag-cloud-link">Fortnite</a>
+    
+    <a href="/tags/Overwatch/" style="font-size: 16.442132619794116px;" class="tag-cloud-link">Overwatch</a>
+    
+    <a href="/tags/Warframe/" style="font-size: 19.941378498404802px;" class="tag-cloud-link">Warframe</a>
+    
+    <a href="/tags/Team-Fortress-2/" style="font-size: 8.769150014717813px;" class="tag-cloud-link">Team Fortress 2</a>
+    
+    <a href="/tags/Rainbow-Six/" style="font-size: 13.456863641641755px;" class="tag-cloud-link">Rainbow Six</a>
+    
+    <a href="/tags/Quake/" style="font-size: 13.705786935483651px;" class="tag-cloud-link">Quake</a>
+    
+    <a href="/tags/PC/" style="font-size: 14.915662574542766px;" class="tag-cloud-link">PC</a>
+    
+    <a href="/tags/PS4/" style="font-size: 15.051815806321425px;" class="tag-cloud-link">PS4</a>
+    
+    <a href="/tags/XboxOne/" style="font-size: 17.02274906062165px;" class="tag-cloud-link">XboxOne</a>
+    
+    <a href="/tags/Webm/" style="font-size: 17.62881690350528px;" class="tag-cloud-link">Webm</a>
+    
+    <a href="/tags/Viuly/" style="font-size: 17.741960170548055px;" class="tag-cloud-link">Viuly</a>
+    
+    <a href="/tags/Spinzaku/" style="font-size: 18.00110449271922px;" class="tag-cloud-link">Spinzaku</a>
+    
+    <a href="/tags/Black-Isle-Studios/" style="font-size: 8.195359218985574px;" class="tag-cloud-link">Black Isle Studios</a>
+    
+    <a href="/tags/Interplay/" style="font-size: 17.535659849271436px;" class="tag-cloud-link">Interplay</a>
+    
+    <a href="/tags/Gamebryo/" style="font-size: 13.890233475771286px;" class="tag-cloud-link">Gamebryo</a>
+    
+    <a href="/tags/ZeniMax/" style="font-size: 9.152453779555447px;" class="tag-cloud-link">ZeniMax</a>
+    
+    <a href="/tags/Xbox-360/" style="font-size: 11.929722625057291px;" class="tag-cloud-link">Xbox 360</a>
+    
+    <a href="/tags/PS3/" style="font-size: 11.276552171272769px;" class="tag-cloud-link">PS3</a>
+    
+    <a href="/tags/Mac/" style="font-size: 16.070788796601732px;" class="tag-cloud-link">Mac</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://www.donationalerts.ru/r/darksunbot" target="_blank">DonationAlerts</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA" target="_blank">YouTube</a>
+    </li>
+    
+    <li>
+        <a href="https://www.twitch.tv/darksunb0t" target="_blank">Twitch</a>
+    </li>
+    
+    <li>
+        <a href="https://viuly.io/channel/36021?tab=videos" target="_blank">Viuly</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        DarkSunB0t © 2017-2018 
+<p>
+<a class="icon" href="https://viuly.io/channel/36021?tab=videos"><i class="fa fa-vimeo" title="Viuly"></i></a>
+<a class="icon" href="https://steamcommunity.com/groups/darksunbot"><i class="fa fa-steam-square" title="Steam"></i></a>
+<a class="icon" href="https://t.me/darksunb0t"><i class="fa fa-telegram" title="Telegram"></i></a>
+<a class="icon" href="https://twitter.com/DarkSunB0t"><i class="fa fa-twitter" title="Twitter"></i></a>
+<a class="icon" href="https://vk.com/darksunb0t"><i class="fa fa-vk" title="Vk"></i></a>
+<a class="icon" href="https://github.com/DarkSunB0t"><i class="fa fa-github" title="Github"></i></a>
+<a class="icon" href="https://darksunb0t.deviantart.com/"><i class="fa fa-deviantart" title="DeviantArt"></i></a>
+<a class="icon" href="https://sketchfab.com/DarkSunB0t"><i class="fa fa-cubes" title="Sketchfab"></i></a>
+<a class="icon" href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA"><i class="fa fa-youtube-play" title="YouTube"></i></a>
+<a class="icon" href="https://www.twitch.tv/darksunb0t"><i class="fa fa-twitch" title="Twitch"></i></a>
+</p>
+    </div>
+</footer>
+
+<!-- кнопка наверх -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = 'предпросмотр';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // Скролл aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
+<script src="/js/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Mon Nov 12 2018 08:08:32 GMT+0300'
+      window.commentConfig.owner = 'DarkSunB0t'
+      window.commentConfig.repo = 'DarkSunB0t'
+      window.commentConfig.client_id = 'b125c307167a8f83f890'
+      window.commentConfig.client_secret = '2dba64121b40393dc95fcbf96f18b717f9f4cb39'
+      window.commentConfig.redirect_uri = 'https://darksunb0t.github.io'
+    } else {
+      window.commentConfig = {
+      	id: 'Mon Nov 12 2018 08:08:32 GMT+0300',
+        owner: 'DarkSunB0t',
+        repo: 'DarkSunB0t',
+        client_id: 'b125c307167a8f83f890',
+        client_secret: '2dba64121b40393dc95fcbf96f18b717f9f4cb39',
+        redirect_uri: 'https://darksunb0t.github.io'
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
+
+</html>
