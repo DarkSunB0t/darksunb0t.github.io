@@ -1,86 +1,1757 @@
-<!DOCTYPE html><html lang="ru" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>DarkSunB0t - Игровой вестник</title><meta name="description" content="Тот самый редкостный мерзавец, что пытается делать &quot;качественный&quot; контент для тебя."><meta name="keywords" content="Video, видео, обзоры, статьи, рецензии, игры, ДаркСанБот, ТёмныйЛучАим,"><meta name="author" content="DarkSunB0t"><meta name="copyright" content="DarkSunB0t"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="DarkSunB0t"><meta name="twitter:description" content="Тот самый редкостный мерзавец, что пытается делать &quot;качественный&quot; контент для тебя."><meta name="twitter:image" content="https://darksunb0t.github.io/img/cover/avatar.jpg"><meta property="og:type" content="website"><meta property="og:title" content="DarkSunB0t"><meta property="og:url" content="https://darksunb0t.github.io/"><meta property="og:site_name" content="DarkSunB0t"><meta property="og:description" content="Тот самый редкостный мерзавец, что пытается делать &quot;качественный&quot; контент для тебя."><meta property="og:image" content="https://darksunb0t.github.io/img/cover/avatar.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
-var t = Cookies.get("theme");
-if (autoChangeMode == '1'){
-const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
-const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
-const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="DarkSunB0t">
+    
+    
+    
+    
+    
+    
+    <title>DarkSunB0t</title>
+    <link href=”https://darksunb0t.github.io“ rel=”prefetch” />
 
-if (t === undefined){
-  if (isLightMode) activateLightMode()
-  else if (isDarkMode) activateDarkMode()
-  else if (isNotSpecified || hasNoSupport){
-    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-    now = new Date();
-    hour = now.getHours();
-    isNight = hour < 6 || hour >= 18
-    isNight ? activateDarkMode() : activateLightMode()
-}
-} else if (t == 'light') activateLightMode()
-else activateDarkMode()
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg,preview11.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://darksunb0t.github.io" class="menuItem" style="left: 50%; top: 15%;">Домой</a>
+            
+            <a href="/page/2/" class="menuItem" style="left: 80.3109%; top: 32.5%;">Вперёд</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">Архив</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">Обо мне</a>
+            <a href="https://vk.com/im?sel=-153364016" target="_blank" rel="noopener" class="menuItem" style="left: 19.6891%; top: 67.5%;">Связаться</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">Назад</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/maskot.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://darksunb0t.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #ce0404,0 0 35px #ce0404,0 0 40px #ce0404,0 0 50px #ce0404,0 0 75px #ce0404;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">DarkSunB0t</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="current">
+                    <a href="/">
+                        <i class="fa fa-home"></i>Главная
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>Архив
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>Категории
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/API/">API</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/">Видео</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%BA%D0%B8/">Игровые движки</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>Тэги
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Windows/">Windows</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/Microsoft/">Microsoft</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/%D0%9E%D0%B1%D0%B7%D0%BE%D1%80/">Обзор</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>Обо мне
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<div class="alert well fade in" id="gal-issue" role="alert">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <!-- Объявление -->
+    Добро пожаловать на мой сайт! <strong><a class="icon" href="/rss2.xml"><i class="fa fa-rss" title="RSS">RSS</strong></a></i> 
+    <br>
+    Спасибо за внимание!
+    <!-- Объявление -->
+</div>
+
+<div id="article-list">
+     
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.04</span>
+        <span class="day">08</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/04/08/hello-world/">
+                    <span>Hello World</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2020/04/08/hello-world/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2020/04/08/hello-world/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview5.jpg" alt="Hello World">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2020/04/08/hello-world/">
+                        <span>Hello World</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2020-04-08
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2020/04/08/hello-world/">
+                    
+                    <img src="/imgs/preview/preview11.jpg" alt="Hello World">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/04/08/hello-world/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.03</span>
+        <span class="day">10</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/03/10/upd0.5/">
+                    <span>Update 0.6</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Update/">Update</a>, 
+                
+                <a href="/tags/DarkSunB0t/">DarkSunB0t</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2020/03/10/upd0.5/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2020/03/10/upd0.5/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview7.jpg" alt="Update 0.6">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2020/03/10/upd0.5/">
+                        <span>Update 0.6</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2020-03-10
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Update/">Update</a>, 
+            
+            <a href="/tags/DarkSunB0t/">DarkSunB0t</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2020/03/10/upd0.5/">
+                    
+                    <img src="/imgs/preview/preview3.jpg" alt="Update 0.6">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2020/03/10/upd0.5/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/upd0.5/">
+                    <span>Update 0.5</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Update/">Update</a>, 
+                
+                <a href="/tags/DarkSunB0t/">DarkSunB0t</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/upd0.5/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/upd0.5/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/site1.jpg" alt="Update 0.5">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/upd0.5/">
+                        <span>Update 0.5</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Update/">Update</a>, 
+            
+            <a href="/tags/DarkSunB0t/">DarkSunB0t</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/upd0.5/">
+                    
+                    <img src="/imgs/preview/site1.jpg" alt="Update 0.5">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/upd0.5/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/falloutnewvegas/">
+                    <span>Fallout New Vegas</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Fallout/">Fallout</a>, 
+                
+                <a href="/tags/Bethesda/">Bethesda</a>, 
+                
+                <a href="/tags/Fallout-New-Vegas/">Fallout New Vegas</a>, 
+                
+                <a href="/tags/New-Vegas/">New Vegas</a>, 
+                
+                <a href="/tags/Obsidian-Entertainment/">Obsidian Entertainment</a>, 
+                
+                <a href="/tags/Action/">Action</a>, 
+                
+                <a href="/tags/RPG/">RPG</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/falloutnewvegas/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/falloutnewvegas/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/falloutnv.jpg" alt="Fallout New Vegas">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/falloutnewvegas/">
+                        <span>Fallout New Vegas</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Fallout/">Fallout</a>, 
+            
+            <a href="/tags/Bethesda/">Bethesda</a>, 
+            
+            <a href="/tags/Fallout-New-Vegas/">Fallout New Vegas</a>, 
+            
+            <a href="/tags/New-Vegas/">New Vegas</a>, 
+            
+            <a href="/tags/Obsidian-Entertainment/">Obsidian Entertainment</a>, 
+            
+            <a href="/tags/Action/">Action</a>, 
+            
+            <a href="/tags/RPG/">RPG</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/falloutnewvegas/">
+                    
+                    <img src="/imgs/preview/falloutnv.jpg" alt="Fallout New Vegas">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/falloutnewvegas/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/dirt/">
+                    <span>Colin McRae DiRT</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+                
+                <a href="/tags/Dirt/">Dirt</a>, 
+                
+                <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+                
+                <a href="/tags/Codemasters/">Codemasters</a>, 
+                
+                <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+                
+                <a href="/tags/Rally/">Rally</a>, 
+                
+                <a href="/tags/Colin-McRae/">Colin McRae</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/dirt/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/dirt/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/dirt.jpg" alt="Colin McRae DiRT">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/dirt/">
+                        <span>Colin McRae DiRT</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+            
+            <a href="/tags/Dirt/">Dirt</a>, 
+            
+            <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+            
+            <a href="/tags/Codemasters/">Codemasters</a>, 
+            
+            <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+            
+            <a href="/tags/Rally/">Rally</a>, 
+            
+            <a href="/tags/Colin-McRae/">Colin McRae</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/dirt/">
+                    
+                    <img src="/imgs/preview/dirt.jpg" alt="Colin McRae DiRT">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/dirt/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/fallout-van-buren/">
+                    <span>Project Van Buren</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Fallout/">Fallout</a>, 
+                
+                <a href="/tags/RPG/">RPG</a>, 
+                
+                <a href="/tags/Van-Buren/">Van Buren</a>, 
+                
+                <a href="/tags/Black-Isle-Studios/">Black Isle Studios</a>, 
+                
+                <a href="/tags/Interplay/">Interplay</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/fallout-van-buren/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/fallout-van-buren/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/falloutvb.jpg" alt="Project Van Buren">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/fallout-van-buren/">
+                        <span>Project Van Buren</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Fallout/">Fallout</a>, 
+            
+            <a href="/tags/RPG/">RPG</a>, 
+            
+            <a href="/tags/Van-Buren/">Van Buren</a>, 
+            
+            <a href="/tags/Black-Isle-Studios/">Black Isle Studios</a>, 
+            
+            <a href="/tags/Interplay/">Interplay</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/fallout-van-buren/">
+                    
+                    <img src="/imgs/preview/falloutvb.jpg" alt="Project Van Buren">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/fallout-van-buren/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/directx/">
+                    <span>DirectX</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Windows/">Windows</a>, 
+                
+                <a href="/tags/Microsoft/">Microsoft</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/directx/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/directx/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/directx.jpg" alt="DirectX">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/directx/">
+                        <span>DirectX</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Windows/">Windows</a>, 
+            
+            <a href="/tags/Microsoft/">Microsoft</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/directx/">
+                    
+                    <img src="/imgs/preview/directx.jpg" alt="DirectX">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/directx/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/ego_engine/">
+                    <span>EGO™ Engine</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+                
+                <a href="/tags/Dirt/">Dirt</a>, 
+                
+                <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+                
+                <a href="/tags/Codemasters/">Codemasters</a>, 
+                
+                <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+                
+                <a href="/tags/Rally/">Rally</a>, 
+                
+                <a href="/tags/Dirt-2/">Dirt 2</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/ego_engine/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/ego_engine/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/dirt.jpg" alt="EGO™ Engine">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/ego_engine/">
+                        <span>EGO™ Engine</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+            
+            <a href="/tags/Dirt/">Dirt</a>, 
+            
+            <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+            
+            <a href="/tags/Codemasters/">Codemasters</a>, 
+            
+            <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+            
+            <a href="/tags/Rally/">Rally</a>, 
+            
+            <a href="/tags/Dirt-2/">Dirt 2</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/ego_engine/">
+                    
+                    <img src="/imgs/preview/dirt.jpg" alt="EGO™ Engine">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/ego_engine/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/dirt4/">
+                    <span>Dirt 4</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Dirt/">Dirt</a>, 
+                
+                <a href="/tags/Dirt-4/">Dirt 4</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/dirt4/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/dirt4/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/dirt.jpg" alt="Dirt 4">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/dirt4/">
+                        <span>Dirt 4</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/Dirt/">Dirt</a>, 
+            
+            <a href="/tags/Dirt-4/">Dirt 4</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/dirt4/">
+                    
+                    <img src="/imgs/preview/dirt.jpg" alt="Dirt 4">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/dirt4/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">.11</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/11/12/dirt2/">
+                    <span>DiRT 2</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+                
+                <a href="/tags/Dirt/">Dirt</a>, 
+                
+                <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+                
+                <a href="/tags/Codemasters/">Codemasters</a>, 
+                
+                <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+                
+                <a href="/tags/Rally/">Rally</a>, 
+                
+                <a href="/tags/Dirt-2/">Dirt 2</a>, 
+                
+                <a href="/tags/Nintendo-DS/">Nintendo DS</a>, 
+                
+                <a href="/tags/PSP/">PSP</a>, 
+                
+                <a href="/tags/WII/">WII</a>, 
+                
+                <a href="/tags/PS3/">PS3</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2018/11/12/dirt2/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2018/11/12/dirt2/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/dirt20.jpg" alt="DiRT 2">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2018/11/12/dirt2/">
+                        <span>DiRT 2</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2018-11-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Автосимулятор</a>, 
+            
+            <a href="/tags/Dirt/">Dirt</a>, 
+            
+            <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>, 
+            
+            <a href="/tags/Codemasters/">Codemasters</a>, 
+            
+            <a href="/tags/Colin-McRae-Rally/">Colin McRae Rally</a>, 
+            
+            <a href="/tags/Rally/">Rally</a>, 
+            
+            <a href="/tags/Dirt-2/">Dirt 2</a>, 
+            
+            <a href="/tags/Nintendo-DS/">Nintendo DS</a>, 
+            
+            <a href="/tags/PSP/">PSP</a>, 
+            
+            <a href="/tags/WII/">WII</a>, 
+            
+            <a href="/tags/PS3/">PS3</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2018/11/12/dirt2/">
+                    
+                    <img src="/imgs/preview/dirt20.jpg" alt="DiRT 2">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2018/11/12/dirt2/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+</div>
+<! - До 7 впереди <1 2 3 4 5 6 ->
+<! - Помимо 7-й страницы, она делится на <1 ... (n - 3) (n - 2) (n - 1) n, а фронт фиксирован 6 ->
+
+<! - До 8 (n + 1) до (n + 7)> ->
+<! - Если последняя страница отличается от текущей страницы более чем на 7, тогда будет фиксированное значение 6, (n + 1) (n + 2) (n + 3) ... total> ->
 
 
-} else if (autoChangeMode == '2'){
-  now = new Date();
-  hour = now.getHours();
-  isNight = hour < 6 || hour >= 18
-  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode() 
-} else {
-  if ( t == 'dark' ) activateDarkMode()
-  else if ( t == 'light') activateLightMode()
-}
 
-function activateDarkMode(){
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
-  }
-}
-function activateLightMode(){
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null){
-  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
-  }
-}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="https://darksunb0t.github.io/"><link rel="preload" href="/img/cover/AvatarMain.jpg" as="image"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
-  copy: {
-    success: 'Копирование успешно',
-    error: 'Ошибка копирования',
-    noSupport: 'Браузер не поддерживает функцию'
-  },
-  bookmark: {
-    title: 'Snackbar.bookmark.title',
-    message_prev: 'Нажмите',
-    message_next: 'чтобы добавить в закладки'
-  },
-  runtime_unit: 'дней',
-  runtime: true,
-  copyright: undefined,
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  baiduPush: false,
-  isHome: true,
-  isPost: false
-  
-}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">DarkSunB0t</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Главая</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Архив</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Тэги</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Категории</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Ссылки</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> Обо мне</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> Моё творчество</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Музыка</span></a></li><li><a class="site-page" href="/video/"><i class="fa-fw fa fa-film"></i><span> Видео</span></a></li></ul></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/cover/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Статьи</div><div class="length_num">32</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Теги</div><div class="length_num">68</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Категории</div><div class="length_num">4</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Главая</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Архив</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Тэги</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Категории</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Ссылки</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> Обо мне</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> Моё творчество</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Музыка</span></a></li><li><a class="site-page" href="/video/"><i class="fa-fw fa fa-film"></i><span> Видео</span></a></li></ul></div></div></div></div><div id="body-wrap"><nav class="full_page" id="nav" style="background-image: url(/img/cover/AvatarMain.jpg)"><div id="site-info"><div id="site-title"><span class="blogtitle">DarkSunB0t</span></div><div id="site-sub-title"><span class="subtitle"></span></div><div id="site-social-icons"><a class="social-icon" href="https://github.com/jerryc127" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="mailto:xxxxxxxx@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div><div class="scroll-down"><i class="fa fa-angle-down scroll-down-effects"></i></div></nav><main id="content-outer"><div class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item article-container"><div class="post_cover left_radius"><a href="/2020/03/10/upd0.6/" title="Update 0.6"><img class="post_bg lazyload" data-src="/img/cover/site1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Update 0.6"></a></div><div class="recent-post-info">  <a class="article-title" href="/2020/03/10/upd0.6/" title="Update 0.6">Update 0.6</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-03-10</time><div class="content">Update 0.6
-Переделка дизайна.
-Переделан вид материалов и списки.
-Режим чтения записей с оглавлением.
-Теги материала разделены и различимы.
-Светлая и н ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover right_radius"><a href="/2018/11/12/upd0.5/" title="Update 0.5"><img class="post_bg lazyload" data-src="/img/cover/site1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Update 0.5"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/upd0.5/" title="Update 0.5">Update 0.5</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><div class="content">Update 0.5-Добавлена база данных с более 20 страницами игр. С каждым обновлением будет больше.    На данный момент есть серии: Fallout, Dirt, Grid, Le ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover left_radius"><a href="/2018/11/12/falloutnewvegas/" title="Fallout New Vegas"><img class="post_bg lazyload" data-src="/img/cover/falloutnv.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Fallout New Vegas"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/falloutnewvegas/" title="Fallout New Vegas">Fallout New Vegas</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D1%8B/">Игры</a></span><div class="content">_Fallout: New Vegas_![Fallout: New Vegas](/img/cover/falloutnv1.jpg)Разработчик[Obsidian Entertainment](/tags/Obsidian-Entertainment)Издатель[Bethesda ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover right_radius"><a href="/2018/11/12/dirt/" title="Colin McRae DiRT"><img class="post_bg lazyload" data-src="/img/cover/dirt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Colin McRae DiRT"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/dirt/" title="Colin McRae DiRT">Colin McRae DiRT</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D1%8B/">Игры</a></span><div class="content">_Colin McRae: DiRT_![Colin McRae: DiRT.jpg](/img/cover/dirt1.jpg)Разработчик[Codemasters](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Л ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover left_radius"><a href="/2018/11/12/fallout-van-buren/" title="Project Van Buren"><img class="post_bg lazyload" data-src="/img/cover/falloutvb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Project Van Buren"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/fallout-van-buren/" title="Project Van Buren">Project Van Buren</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><div class="content">_Fallout: New Vegas_![Fallout new vegas.jpg](/img/cover/falloutvb.jpg)Разработчик[Black Isle Studios](/tags/Black-Isle-Studios)Издатель[Interplay Ente ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover right_radius"><a href="/2018/11/12/directx/" title="DirectX"><img class="post_bg lazyload" data-src="/img/cover/directx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DirectX"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/directx/" title="DirectX">DirectX</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/API/">API</a></span><div class="content">_Colin McRae: DiRT_![Colin McRae: DiRT.jpg](/img/cover/dirt1.jpg)Разработчик[Codemasters](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Л ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover left_radius"><a href="/2018/11/12/ego_engine/" title="EGO™ Engine"><img class="post_bg lazyload" data-src="/img/cover/dirt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="EGO™ Engine"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/ego_engine/" title="EGO™ Engine">EGO™ Engine</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%BA%D0%B8/">Игровые движки</a></span><div class="content">_Colin McRae: DiRT_![Colin McRae: DiRT.jpg](/img/cover/dirt1.jpg)Разработчик[Codemasters](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Л ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover right_radius"><a href="/2018/11/12/gamebryo_engine/" title="Gamebryo Element Engine"><img class="post_bg lazyload" data-src="/img/cover/gamebryo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gamebryo Element Engine"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/gamebryo_engine/" title="Gamebryo Element Engine">Gamebryo Element Engine</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%BA%D0%B8/">Игровые движки</a></span><div class="content">_Colin McRae: DiRT_![Colin McRae: DiRT.jpg](/img/cover/dirt1.jpg)Разработчик[Codemasters](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Л ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover left_radius"><a href="/2018/11/12/dirt2/" title="DiRT 2"><img class="post_bg lazyload" data-src="/img/cover/dirt20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DiRT 2"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/dirt2/" title="DiRT 2">DiRT 2</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D1%8B/">Игры</a></span><div class="content">_DiRT 2_![Dirt 2](/img/cover/dirt2.jpg)Разработчик[Codemasters](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Локализатор](https://ru.wik ...</div></div></div><div class="recent-post-item article-container"><div class="post_cover right_radius"><a href="/2018/11/12/dirt3/" title="Dirt 3"><img class="post_bg lazyload" data-src="/img/cover/dirt33.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Dirt 3"></a></div><div class="recent-post-info">  <a class="article-title" href="/2018/11/12/dirt3/" title="Dirt 3">Dirt 3</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2018-11-12</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fa fa-inbox article-meta__icon" aria-hidden="true"></i><a class="article-meta__categories" href="/categories/%D0%98%D0%B3%D1%80%D1%8B/">Игры</a></span><div class="content">_DiRT 3_![Dirt 2](/img/cover/dirt3.jpg)Разработчик[Codemasters Southam](/tags/Codemasters)Издатель[Codemasters](/tags/Codemasters)[Локализатор](https: ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-fw fa-chevron-right" aria-hidden="true"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/cover/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"><div class="author-info__name">DarkSunB0t</div><div class="author-info__description">Тот самый редкостный мерзавец, что пытается делать &quot;качественный&quot; контент для тебя.</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Статьи</div><div class="length_num">32</div></a></div><div class="card-info-data-item is-center">      <a href="/tags/"><div class="headline">Теги</div><div class="length_num">68</div></a></div><div class="card-info-data-item is-center">     <a href="/categories/"><div class="headline">Категории</div><div class="length_num">4</div></a></div></div><div class="card-info-bookmark is-center"><a class="bookmark button--primary button--animated" id="bookmark-it" href="javascript:;" title="Добавить в закладки" target="_self"><i class="fa fa-bookmark" aria-hidden="true"></i><span>Добавить в закладки</span></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jerryc127" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><a class="social-icon" href="mailto:xxxxxxxx@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a><a class="social-icon" href="/atom.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fa fa-bullhorn card-announcement-animation" aria-hidden="true"></i><span>Анонсы</span></div><div class="announcement_content">Внимание! Спасибо за внимание! ^_^</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fa fa-history" aria-hidden="true"></i><span>Последняя запись</span></div><div class="aside-recent-item"> <div class="aside-recent-post"><a href="/2020/03/10/upd0.6/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/cover/site1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Update 0.6" alt="Update 0.6"></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/03/10/upd0.6/" title="Update 0.6">Update 0.6</div><time class="aside-post_meta post-meta__date">2020-03-10</time></div></a></div><div class="aside-recent-post"><a href="/2018/11/12/upd0.5/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/cover/site1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Update 0.5" alt="Update 0.5"></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/11/12/upd0.5/" title="Update 0.5">Update 0.5</div><time class="aside-post_meta post-meta__date">2018-11-12</time></div></a></div><div class="aside-recent-post"><a href="/2018/11/12/falloutnewvegas/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/cover/falloutnv.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Fallout New Vegas" alt="Fallout New Vegas"></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/11/12/falloutnewvegas/" title="Fallout New Vegas">Fallout New Vegas</div><time class="aside-post_meta post-meta__date">2018-11-12</time></div></a></div><div class="aside-recent-post"><a href="/2018/11/12/dirt/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/cover/dirt.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Colin McRae DiRT" alt="Colin McRae DiRT"></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/11/12/dirt/" title="Colin McRae DiRT">Colin McRae DiRT</div><time class="aside-post_meta post-meta__date">2018-11-12</time></div></a></div><div class="aside-recent-post"><a href="/2018/11/12/fallout-van-buren/"><div class="aside-post-cover"><img class="aside-post-bg lazyload" data-src="/img/cover/falloutvb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Project Van Buren" alt="Project Van Buren"></div><div class="aside-post-title"><div class="aside-post_title" href="/2018/11/12/fallout-van-buren/" title="Project Van Buren">Project Van Buren</div><time class="aside-post_meta post-meta__date">2018-11-12</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fa fa-folder-open" aria-hidden="true"></i><span>Категории</span></div><ul class="aside-category-item">       <li class="aside-category-list"><a class="aside-category-list_link" href="/categories/API/"><span class="aside-category-list_name">API</span><span class="aside-category-list_length">1</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/"><span class="aside-category-list_name">Видео</span><span class="aside-category-list_length">6</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B4%D0%B2%D0%B8%D0%B6%D0%BA%D0%B8/"><span class="aside-category-list_name">Игровые движки</span><span class="aside-category-list_length">2</span></a></li><li class="aside-category-list"><a class="aside-category-list_link" href="/categories/%D0%98%D0%B3%D1%80%D1%8B/"><span class="aside-category-list_name">Игры</span><span class="aside-category-list_length">12</span></a></li></ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fa fa-tags" aria-hidden="true"></i><span>Теги</span></div><div class="card-tag-cloud"><a href="/tags/ASCII/" style="font-size: 17.33px; color: #999c9f">ASCII</a> <a href="/tags/Action/" style="font-size: 17.33px; color: #999c9f">Action</a> <a href="/tags/Bethesda/" style="font-size: 18.67px; color: #999ea6">Bethesda</a> <a href="/tags/Black-Isle-Studios/" style="font-size: 18.67px; color: #999ea6">Black Isle Studios</a> <a href="/tags/Codemasters/" style="font-size: 22.67px; color: #99a6b9">Codemasters</a> <a href="/tags/Colin-McRae/" style="font-size: 16px; color: #999">Colin McRae</a> <a href="/tags/Colin-McRae-Rally/" style="font-size: 21.33px; color: #99a4b2">Colin McRae Rally</a> <a href="/tags/DarkSunB0t/" style="font-size: 21.33px; color: #99a4b2">DarkSunB0t</a> <a href="/tags/Dirt/" style="font-size: 24px; color: #99a9bf">Dirt</a> <a href="/tags/Dirt-2/" style="font-size: 18.67px; color: #999ea6">Dirt 2</a> <a href="/tags/Dirt-3/" style="font-size: 16px; color: #999">Dirt 3</a> <a href="/tags/Dirt-4/" style="font-size: 17.33px; color: #999c9f">Dirt 4</a> <a href="/tags/F2P/" style="font-size: 20px; color: #99a1ac">F2P</a> <a href="/tags/Fallout/" style="font-size: 24px; color: #99a9bf">Fallout</a> <a href="/tags/Fallout-2/" style="font-size: 16px; color: #999">Fallout 2</a> <a href="/tags/Fallout-3/" style="font-size: 17.33px; color: #999c9f">Fallout 3</a> <a href="/tags/Fallout-4/" style="font-size: 16px; color: #999">Fallout 4</a> <a href="/tags/Fallout-76/" style="font-size: 16px; color: #999">Fallout 76</a> <a href="/tags/Fallout-New-Vegas/" style="font-size: 17.33px; color: #999c9f">Fallout New Vegas</a> <a href="/tags/For-Honor/" style="font-size: 16px; color: #999">For Honor</a> <a href="/tags/Fortnite/" style="font-size: 16px; color: #999">Fortnite</a> <a href="/tags/Free-to-Play/" style="font-size: 18.67px; color: #999ea6">Free to Play</a> <a href="/tags/Gamebryo/" style="font-size: 16px; color: #999">Gamebryo</a> <a href="/tags/Grasshopper-Manufacture/" style="font-size: 17.33px; color: #999c9f">Grasshopper Manufacture</a> <a href="/tags/HTML/" style="font-size: 16px; color: #999">HTML</a> <a href="/tags/Interplay/" style="font-size: 18.67px; color: #999ea6">Interplay</a> <a href="/tags/Let-It-Die/" style="font-size: 17.33px; color: #999c9f">Let It Die</a> <a href="/tags/MMO/" style="font-size: 16px; color: #999">MMO</a> <a href="/tags/Mac/" style="font-size: 16px; color: #999">Mac</a> <a href="/tags/Microsoft/" style="font-size: 16px; color: #999">Microsoft</a> <a href="/tags/New-Vegas/" style="font-size: 16px; color: #999">New Vegas</a> <a href="/tags/Nintendo-DS/" style="font-size: 16px; color: #999">Nintendo DS</a> <a href="/tags/Obsidian-Entertainment/" style="font-size: 16px; color: #999">Obsidian Entertainment</a> <a href="/tags/Overwatch/" style="font-size: 16px; color: #999">Overwatch</a> <a href="/tags/PC/" style="font-size: 17.33px; color: #999c9f">PC</a> <a href="/tags/PS3/" style="font-size: 17.33px; color: #999c9f">PS3</a> <a href="/tags/PS4/" style="font-size: 17.33px; color: #999c9f">PS4</a> <a href="/tags/PSP/" style="font-size: 16px; color: #999">PSP</a> <a href="/tags/Quake/" style="font-size: 16px; color: #999">Quake</a> <a href="/tags/RPG/" style="font-size: 21.33px; color: #99a4b2">RPG</a> <a href="/tags/Rainbow-Six/" style="font-size: 16px; color: #999">Rainbow Six</a> <a href="/tags/Rally/" style="font-size: 21.33px; color: #99a4b2">Rally</a> <a href="/tags/Souls-like/" style="font-size: 17.33px; color: #999c9f">Souls like</a> <a href="/tags/Spinzaku/" style="font-size: 17.33px; color: #999c9f">Spinzaku</a> <a href="/tags/Spiral-Knights/" style="font-size: 16px; color: #999">Spiral Knights</a> <a href="/tags/Steam/" style="font-size: 16px; color: #999">Steam</a> <a href="/tags/Team-Fortress-2/" style="font-size: 16px; color: #999">Team Fortress 2</a> <a href="/tags/Update/" style="font-size: 22.67px; color: #99a6b9">Update</a> <a href="/tags/Van-Buren/" style="font-size: 16px; color: #999">Van Buren</a> <a href="/tags/Viuly/" style="font-size: 17.33px; color: #999c9f">Viuly</a> <a href="/tags/Vk/" style="font-size: 16px; color: #999">Vk</a> <a href="/tags/WII/" style="font-size: 16px; color: #999">WII</a> <a href="/tags/Warframe/" style="font-size: 17.33px; color: #999c9f">Warframe</a> <a href="/tags/Web/" style="font-size: 16px; color: #999">Web</a> <a href="/tags/Webm/" style="font-size: 17.33px; color: #999c9f">Webm</a> <a href="/tags/Windows/" style="font-size: 16px; color: #999">Windows</a> <a href="/tags/WoT/" style="font-size: 16px; color: #999">WoT</a> <a href="/tags/Xbox-360/" style="font-size: 17.33px; color: #999c9f">Xbox 360</a> <a href="/tags/XboxOne/" style="font-size: 16px; color: #999">XboxOne</a> <a href="/tags/Youtube/" style="font-size: 20px; color: #99a1ac">Youtube</a> <a href="/tags/ZeniMax/" style="font-size: 16px; color: #999">ZeniMax</a> <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/" style="font-size: 24px; color: #99a9bf">Автосимулятор</a> <a href="/tags/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/" style="font-size: 22.67px; color: #99a6b9">Видео</a> <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/" style="font-size: 24px; color: #99a9bf">Гонки</a> <a href="/tags/%D0%9E%D0%B1%D0%B7%D0%BE%D1%80/" style="font-size: 17.33px; color: #999c9f">Обзор</a> <a href="/tags/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BF%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%BF%D1%81%D0%B8%D1%81/" style="font-size: 20px; color: #99a1ac">Постапокалипсис</a> <a href="/tags/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/" style="font-size: 16px; color: #999">Приключение</a> <a href="/tags/%D0%9F%D1%83%D1%81%D1%82%D0%BE%D1%88%D1%8C/" style="font-size: 20px; color: #99a1ac">Пустошь</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fa fa-archive" aria-hidden="true"></i><span>Архивы</span></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/"><span class="archive-list-date">2020年03月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/"><span class="archive-list-date">2018年11月</span><span class="archive-list-count">18</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/"><span class="archive-list-date">2018年10月</span><span class="archive-list-count">3</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/"><span class="archive-list-date">2018年09月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><span class="archive-list-date">2018年06月</span><span class="archive-list-count">2</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><span class="archive-list-date">2018年05月</span><span class="archive-list-count">5</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/"><span class="archive-list-date">2018年02月</span><span class="archive-list-count">1</span></a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/"><span class="archive-list-date">2017年12月</span><span class="archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fa fa-line-chart" aria-hidden="true"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Записей :</div><div class="webinfo-article-count">32</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">Сайт в сети :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" start_date="6/7/2018 00:00:00">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">Посетителей :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">Просмотров :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2020 By DarkSunB0t</div><div class="framework-info"><span>Powered by </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Тема </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Традиционный и упрощённый китайский перевод" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Ночной режим"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Настройка"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-arrow-up" id="go-up" title="Наверх" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/canvas-nest.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true; 
-document.body.addEventListener('input', POWERMODE);
-</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var typed = new Typed(".subtitle", {
-strings: 'Добро пожаловать на мой сайт!,Новые видео и статьи каждую неделю?,Нтсего не,Ничего не пашет D&#44;,Работает?'.split(","),
-startDelay: 300,
-typeSpeed: 100,
-loop: true,
-backSpeed: 50
-});</script></body></html>
+<div id="dsb-pagination" class="clearfix">
+    <ul class="pagination pagination-dsb pull-right">
+        
+        
+        
+        
+        <li class="current">
+            <span>1</span>
+        </li>
+        
+        
+        <li>
+            <a href="/page/2">2</a>
+        </li>
+        
+        <li>
+            <a href="/page/3">3</a>
+        </li>
+        
+        <li>
+            <a href="/page/4">4</a>
+        </li>
+        
+        
+        
+        <li class="next">
+            <a href="/page/2/">»</a>
+        </li>
+        
+    </ul>
+</div>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="Попробуй меня">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            DarkSunB0t
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="Аватар" class="author-image">
+            <p class="author-description">Тот самый редкостный мерзавец, что старается делать "качественный" контент для тебя.
+			<br><a href='/about'>Кто такой DSB?</a></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            Последние комментарии
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            Последние записи
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/04/08/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/10/upd0.5/">Update 0.6</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/upd0.5/">Update 0.5</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/falloutnewvegas/">Fallout New Vegas</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt/">Colin McRae DiRT</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout-van-buren/">Project Van Buren</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/directx/">DirectX</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/ego_engine/">EGO™ Engine</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt4/">Dirt 4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt2/">DiRT 2</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            Случайные записи
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/directx/">DirectX</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/dirt2/">DiRT 2</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout3/">Fallout 3</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/fallout-van-buren/">Project Van Buren</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/29/upd0.4/">Update 0.4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/11/12/upd0.5/">Update 0.5</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/10/letitidie/">Обзор Let It Die</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/30/webm0/">Webm Collection 0</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/09/10/Dirt4/">Обзор Dirt 4</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/03/10/upd0.5/">Update 0.6</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class="">
+                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">Частые темы</a>
+                </li>
+                <li class="">
+                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">Поддержи!</a>
+                </li>
+                <li class="">
+                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">Подписаться</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Windows/" style="font-size: 16.010138607236428px;" class="tag-cloud-link">Windows</a>
+    
+    <a href="/tags/Microsoft/" style="font-size: 10.565975735056941px;" class="tag-cloud-link">Microsoft</a>
+    
+    <a href="/tags/%D0%9E%D0%B1%D0%B7%D0%BE%D1%80/" style="font-size: 16.37505557550535px;" class="tag-cloud-link">Обзор</a>
+    
+    <a href="/tags/Youtube/" style="font-size: 12.930679692807562px;" class="tag-cloud-link">Youtube</a>
+    
+    <a href="/tags/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/" style="font-size: 19.21265107029156px;" class="tag-cloud-link">Видео</a>
+    
+    <a href="/tags/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/" style="font-size: 10.80128298947812px;" class="tag-cloud-link">Автосимулятор</a>
+    
+    <a href="/tags/Dirt/" style="font-size: 16.892417542228515px;" class="tag-cloud-link">Dirt</a>
+    
+    <a href="/tags/Dirt-4/" style="font-size: 8.916971567874404px;" class="tag-cloud-link">Dirt 4</a>
+    
+    <a href="/tags/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/" style="font-size: 19.423407123615817px;" class="tag-cloud-link">Гонки</a>
+    
+    <a href="/tags/Codemasters/" style="font-size: 9.323572136481882px;" class="tag-cloud-link">Codemasters</a>
+    
+    <a href="/tags/Colin-McRae-Rally/" style="font-size: 15.978090199089767px;" class="tag-cloud-link">Colin McRae Rally</a>
+    
+    <a href="/tags/Rally/" style="font-size: 12.341384767960012px;" class="tag-cloud-link">Rally</a>
+    
+    <a href="/tags/Dirt-2/" style="font-size: 8.282884988835686px;" class="tag-cloud-link">Dirt 2</a>
+    
+    <a href="/tags/Colin-McRae/" style="font-size: 19.0501914387362px;" class="tag-cloud-link">Colin McRae</a>
+    
+    <a href="/tags/Nintendo-DS/" style="font-size: 9.527064992978804px;" class="tag-cloud-link">Nintendo DS</a>
+    
+    <a href="/tags/PSP/" style="font-size: 14.129849370095252px;" class="tag-cloud-link">PSP</a>
+    
+    <a href="/tags/WII/" style="font-size: 14.113207997222752px;" class="tag-cloud-link">WII</a>
+    
+    <a href="/tags/Fallout/" style="font-size: 12.363212155547508px;" class="tag-cloud-link">Fallout</a>
+    
+    <a href="/tags/%D0%9F%D0%BE%D1%81%D1%82%D0%B0%D0%BF%D0%BE%D0%BA%D0%B0%D0%BB%D0%B8%D0%BF%D1%81%D0%B8%D1%81/" style="font-size: 13.586364256148045px;" class="tag-cloud-link">Постапокалипсис</a>
+    
+    <a href="/tags/%D0%9F%D1%83%D1%81%D1%82%D0%BE%D1%88%D1%8C/" style="font-size: 18.823328209294978px;" class="tag-cloud-link">Пустошь</a>
+    
+    <a href="/tags/Fallout-2/" style="font-size: 13.682625164943126px;" class="tag-cloud-link">Fallout 2</a>
+    
+    <a href="/tags/Fallout-3/" style="font-size: 13.4383381671718px;" class="tag-cloud-link">Fallout 3</a>
+    
+    <a href="/tags/Fallout-4/" style="font-size: 10.235849573551896px;" class="tag-cloud-link">Fallout 4</a>
+    
+    <a href="/tags/Dirt-3/" style="font-size: 18.560606094011334px;" class="tag-cloud-link">Dirt 3</a>
+    
+    <a href="/tags/Fallout-76/" style="font-size: 11.606081258988647px;" class="tag-cloud-link">Fallout 76</a>
+    
+    <a href="/tags/MMO/" style="font-size: 19.3169012486315px;" class="tag-cloud-link">MMO</a>
+    
+    <a href="/tags/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/" style="font-size: 9.604784790729964px;" class="tag-cloud-link">Приключение</a>
+    
+    <a href="/tags/Bethesda/" style="font-size: 16.766235580027463px;" class="tag-cloud-link">Bethesda</a>
+    
+    <a href="/tags/Fallout-New-Vegas/" style="font-size: 16.06044034731758px;" class="tag-cloud-link">Fallout New Vegas</a>
+    
+    <a href="/tags/New-Vegas/" style="font-size: 19.803058508229434px;" class="tag-cloud-link">New Vegas</a>
+    
+    <a href="/tags/Obsidian-Entertainment/" style="font-size: 10.454304779252311px;" class="tag-cloud-link">Obsidian Entertainment</a>
+    
+    <a href="/tags/Action/" style="font-size: 11.423925675153255px;" class="tag-cloud-link">Action</a>
+    
+    <a href="/tags/RPG/" style="font-size: 11.707850260391275px;" class="tag-cloud-link">RPG</a>
+    
+    <a href="/tags/Van-Buren/" style="font-size: 18.341135769470192px;" class="tag-cloud-link">Van Buren</a>
+    
+    <a href="/tags/Update/" style="font-size: 12.45838470346715px;" class="tag-cloud-link">Update</a>
+    
+    <a href="/tags/DarkSunB0t/" style="font-size: 16.195974126525382px;" class="tag-cloud-link">DarkSunB0t</a>
+    
+    <a href="/tags/Free-to-Play/" style="font-size: 9.265141371028065px;" class="tag-cloud-link">Free to Play</a>
+    
+    <a href="/tags/Grasshopper-Manufacture/" style="font-size: 13.025695616795144px;" class="tag-cloud-link">Grasshopper Manufacture</a>
+    
+    <a href="/tags/Souls-like/" style="font-size: 12.036195500650948px;" class="tag-cloud-link">Souls like</a>
+    
+    <a href="/tags/Let-It-Die/" style="font-size: 14.072885613741452px;" class="tag-cloud-link">Let It Die</a>
+    
+    <a href="/tags/F2P/" style="font-size: 14.063699730523334px;" class="tag-cloud-link">F2P</a>
+    
+    <a href="/tags/ASCII/" style="font-size: 9.09055055446956px;" class="tag-cloud-link">ASCII</a>
+    
+    <a href="/tags/Steam/" style="font-size: 9.233919927617697px;" class="tag-cloud-link">Steam</a>
+    
+    <a href="/tags/Vk/" style="font-size: 18.712432259311733px;" class="tag-cloud-link">Vk</a>
+    
+    <a href="/tags/HTML/" style="font-size: 9.920761828151983px;" class="tag-cloud-link">HTML</a>
+    
+    <a href="/tags/Web/" style="font-size: 17.74643232457586px;" class="tag-cloud-link">Web</a>
+    
+    <a href="/tags/WoT/" style="font-size: 17.926705655526842px;" class="tag-cloud-link">WoT</a>
+    
+    <a href="/tags/For-Honor/" style="font-size: 10.26803899720125px;" class="tag-cloud-link">For Honor</a>
+    
+    <a href="/tags/Spiral-Knights/" style="font-size: 16.894897988429307px;" class="tag-cloud-link">Spiral Knights</a>
+    
+    <a href="/tags/Fortnite/" style="font-size: 11.015929896171443px;" class="tag-cloud-link">Fortnite</a>
+    
+    <a href="/tags/Overwatch/" style="font-size: 10.887004971556433px;" class="tag-cloud-link">Overwatch</a>
+    
+    <a href="/tags/Warframe/" style="font-size: 10.369176354033051px;" class="tag-cloud-link">Warframe</a>
+    
+    <a href="/tags/Team-Fortress-2/" style="font-size: 8.317389066419356px;" class="tag-cloud-link">Team Fortress 2</a>
+    
+    <a href="/tags/Rainbow-Six/" style="font-size: 15.187531484860694px;" class="tag-cloud-link">Rainbow Six</a>
+    
+    <a href="/tags/Quake/" style="font-size: 15.030918179632012px;" class="tag-cloud-link">Quake</a>
+    
+    <a href="/tags/PC/" style="font-size: 19.740819879760764px;" class="tag-cloud-link">PC</a>
+    
+    <a href="/tags/PS4/" style="font-size: 16.62367369510153px;" class="tag-cloud-link">PS4</a>
+    
+    <a href="/tags/XboxOne/" style="font-size: 16.229107212570405px;" class="tag-cloud-link">XboxOne</a>
+    
+    <a href="/tags/Webm/" style="font-size: 15.71378241281409px;" class="tag-cloud-link">Webm</a>
+    
+    <a href="/tags/Viuly/" style="font-size: 15.368296508855128px;" class="tag-cloud-link">Viuly</a>
+    
+    <a href="/tags/Spinzaku/" style="font-size: 17.30246877558534px;" class="tag-cloud-link">Spinzaku</a>
+    
+    <a href="/tags/Black-Isle-Studios/" style="font-size: 10.050098096934246px;" class="tag-cloud-link">Black Isle Studios</a>
+    
+    <a href="/tags/Interplay/" style="font-size: 11.666706524588166px;" class="tag-cloud-link">Interplay</a>
+    
+    <a href="/tags/Gamebryo/" style="font-size: 8.204284738024144px;" class="tag-cloud-link">Gamebryo</a>
+    
+    <a href="/tags/ZeniMax/" style="font-size: 16.895953131723388px;" class="tag-cloud-link">ZeniMax</a>
+    
+    <a href="/tags/Xbox-360/" style="font-size: 15.771029153812032px;" class="tag-cloud-link">Xbox 360</a>
+    
+    <a href="/tags/PS3/" style="font-size: 13.812790952938643px;" class="tag-cloud-link">PS3</a>
+    
+    <a href="/tags/Mac/" style="font-size: 16.675543372705487px;" class="tag-cloud-link">Mac</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://www.donationalerts.ru/r/darksunbot" target="_blank">DonationAlerts</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA" target="_blank">YouTube</a>
+    </li>
+    
+    <li>
+        <a href="https://www.twitch.tv/darksunb0t" target="_blank">Twitch</a>
+    </li>
+    
+    <li>
+        <a href="https://viuly.io/channel/36021?tab=videos" target="_blank">Viuly</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        DarkSunB0t © 2017-2018 
+<p>
+<a class="icon" href="https://viuly.io/channel/36021?tab=videos" target="_blank" rel="noopener"><i class="fa fa-vimeo" title="Viuly"></i></a>
+<a class="icon" href="https://steamcommunity.com/groups/darksunbot" target="_blank" rel="noopener"><i class="fa fa-steam-square" title="Steam"></i></a>
+<a class="icon" href="https://t.me/darksunb0t" target="_blank" rel="noopener"><i class="fa fa-telegram" title="Telegram"></i></a>
+<a class="icon" href="https://twitter.com/DarkSunB0t" target="_blank" rel="noopener"><i class="fa fa-twitter" title="Twitter"></i></a>
+<a class="icon" href="https://vk.com/darksunb0t" target="_blank" rel="noopener"><i class="fa fa-vk" title="Vk"></i></a>
+<a class="icon" href="https://github.com/DarkSunB0t" target="_blank" rel="noopener"><i class="fa fa-github" title="Github"></i></a>
+<a class="icon" href="https://darksunb0t.deviantart.com/" target="_blank" rel="noopener"><i class="fa fa-deviantart" title="DeviantArt"></i></a>
+<a class="icon" href="https://sketchfab.com/DarkSunB0t" target="_blank" rel="noopener"><i class="fa fa-cubes" title="Sketchfab"></i></a>
+<a class="icon" href="https://www.youtube.com/channel/UCbN8-dmM06DDIweTTVAihZA" target="_blank" rel="noopener"><i class="fa fa-youtube-play" title="YouTube"></i></a>
+<a class="icon" href="https://www.twitch.tv/darksunb0t" target="_blank" rel="noopener"><i class="fa fa-twitch" title="Twitch"></i></a>
+</p>
+    </div>
+</footer>
+
+<!-- кнопка наверх -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = 'предпросмотр';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // Скролл aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+<script src="/js/oni.js"></script>
+
+
+
+
+<script src="/js/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'DarkSunB0t'
+      window.commentConfig.repo = 'DarkSunB0t'
+      window.commentConfig.client_id = 'b125c307167a8f83f890'
+      window.commentConfig.client_secret = '2dba64121b40393dc95fcbf96f18b717f9f4cb39'
+      window.commentConfig.redirect_uri = 'https://darksunb0t.github.io'
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'DarkSunB0t',
+        repo: 'DarkSunB0t',
+        client_id: 'b125c307167a8f83f890',
+        client_secret: '2dba64121b40393dc95fcbf96f18b717f9f4cb39',
+        redirect_uri: 'https://darksunb0t.github.io'
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
+
+
+</html>
