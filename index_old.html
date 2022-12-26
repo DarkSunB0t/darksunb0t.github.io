@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Dev in progress.../</title>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fixer {
+    position: relative;
+}
+
+.fixer::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: center / contain no-repeat url('/воттебежпегвместосайта.JPG');
+    opacity: .4;
+    content: "";
+    z-index: -1;
+}
+
+/*Так как весь сайт закрывать не хочу, как и делать отдельную новость из-за необходимости перегенировать все элементы - вставляю быдло-заглушку*/
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+}
+
+p {
+  border-right: 3px solid lightblue;
+  font-size: 1.6rem;
+  color: red;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typingAnimation 10s steps(26, end) infinite,  /* Да не в js, время... */
+             blinkAnimation 1s step-end infinite;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.word {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  padding-left: 10px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  animation: moveUp 7.8s steps(3) infinite;
+}
+
+li:before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 1);
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #fff;
+  left: 10px;
+  animation: moveRight 2600ms steps(13) infinite, blink 200ms steps(4) infinite;
+}
+
+@keyframes typingAnimation {
+  0% {
+    width: 0;
+  }
+  20%, 90% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blinkAnimation {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 260px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -150px;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-left-color: transparent;
+  }
+  100% {
+    border-left-color: green;
+  }
+}
+</style>
+</head>
+<div class="fixer">
+<div class="wrapper">
+  <p class="static">Скоро,</p>
+  <ul class="wordsList">
+    <li class="word">будет обнова...</li>
+    <li class="word">времени ниху...</li>
+    <li class="word">0100101010101..</li>
+    <li class="word">...............</li>
+    <li class="word">...............</li>
+    <li class="word">dc` ,eltn, gplf</li>
+    <li class="word">всё будет, мда.</li>
+  </ul>
+</div>
+
+</body>
+</html>
